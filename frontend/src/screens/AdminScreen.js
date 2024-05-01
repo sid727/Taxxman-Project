@@ -26,7 +26,7 @@ const AdminScreen = () => {
     const fetchTickets = async () => {
       setLoading(true)
       try {
-        const { data } = await axios.get("http://localhost:5000/api/tickets")
+        const { data } = await axios.get("/api/tickets")
         setTickets(data)
         setFilteredTickets(data)
         setLoading(false)
