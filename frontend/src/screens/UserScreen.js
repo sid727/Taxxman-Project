@@ -21,7 +21,7 @@ const UserScreen = () => {
     e.preventDefault()
     setLoading(true)
     try {
-      await axios.post("http://localhost:5000/api/tickets", ticket)
+      await axios.post("/api/tickets", ticket)
       setLoading(false)
       setSuccess(true)
       setError("")
